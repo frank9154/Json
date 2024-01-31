@@ -39,14 +39,14 @@ final class ViewController: UIViewController {
             return
         }
         
+        guard let data = data else { return }
         do {
-            
-            let cocktail = try JSONDecoder().decode(Cocktail.self, from: data)
-            print(cocktail)
+    
+            let cocktail = try JSONDecoder().decode([Cocktail].self, from: data)
+            print(cocktail.first?.strDrink)
             
         } catch {
             print(error.localizedDescription)
-            
         }
 
         //print(response)
