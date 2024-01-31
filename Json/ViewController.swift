@@ -18,17 +18,7 @@ final class ViewController: UIViewController {
     }
     
     private func fetchCocktail() {
-        /*URLSession.shared.dataTask(with: urlString) { [weak self] data, response, error in
-            guard let self else {return }
-            guard let data, let response else {
-                print(error?.localizedDescription ?? "No error description")
-                return
-            }
-            
-            print(response)
-            
-        }.resume()
-         */
+        
         guard let url = URL(string: urlString) else {
             print("Invalid URL")
             return
@@ -41,15 +31,12 @@ final class ViewController: UIViewController {
         
         guard let data = data else { return }
         do {
-    
             let cocktail = try JSONDecoder().decode([Cocktail].self, from: data)
-            print(cocktail.first?.strDrink)
+            print(cocktail)
             
         } catch {
             print(error.localizedDescription)
         }
-
-        //print(response)
         
     }.resume()
 
