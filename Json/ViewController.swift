@@ -24,21 +24,22 @@ final class ViewController: UIViewController {
             return
         }
         URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
-            guard let self = self else { return }
-            print(error?.localizedDescription ?? "No error description")
-            return
-        }
-        
-        guard let data = data else { return }
-        do {
-            let cocktail = try JSONDecoder().decode([Cocktail].self, from: data)
-            print(cocktail)
+            guard let self else { return }
+            guard let data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
             
-        } catch {
-            print(error.localizedDescription)
-        }
+            do {
+                let cocktail = try JSONDecoder().decode([Cocktail].self, from: data)
+                print(cocktail)
+                
+            } catch {
+                print(error.localizedDescription)
+            }
+            
+        }.resume()
         
-    }.resume()
-
+    }
+    
 }
-
