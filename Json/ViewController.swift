@@ -32,7 +32,7 @@ final class ViewController: UIViewController {
             
             do {
                 let cocktail = try JSONDecoder().decode([Cocktail].self, from: data)
-                print(cocktail)
+                print(cocktail.first?.strAlcoholic)
                 
             } catch {
                 print(error.localizedDescription)

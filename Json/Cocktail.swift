@@ -9,9 +9,9 @@ import Foundation
 
 struct Cocktail: Decodable {
     let drinks: [Cocktail]
-    let strDrink: String
-    let strAlcoholic: String
-    let strInstructions: String
-    let strDrinkThumb: String
+    let strDrink: String?
+    let strAlcoholic: String?
+    let strInstructions: String?
+    let strDrinkThumb: String?
     
 }

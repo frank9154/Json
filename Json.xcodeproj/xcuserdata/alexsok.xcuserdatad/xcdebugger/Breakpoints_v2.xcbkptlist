@@ -7,35 +7,20 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EAE10D92-9326-4B24-BB4E-4B0C6E4E2C4A"
+            uuid = "6516BAB4-CF50-460E-B925-54311492FFAF"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Json/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "fetchCocktail()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "EAE10D92-9326-4B24-BB4E-4B0C6E4E2C4A - 659f4beebfbd5e20"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Json.ViewController.fetchCocktail() -&gt; ()"
-                  moduleName = "Json"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/alexsok/Desktop/Lesson%202.01/Json/Json/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "652">
-               </Location>
-               <Location
-                  uuid = "EAE10D92-9326-4B24-BB4E-4B0C6E4E2C4A - e4544ab47e6296da"
+                  uuid = "6516BAB4-CF50-460E-B925-54311492FFAF - e4544ab47e6291e0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -45,27 +30,26 @@
                   urlString = "file:///Users/alexsok/Desktop/Lesson%202.01/Json/Json/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "876">
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "676">
+               </Location>
+               <Location
+                  uuid = "6516BAB4-CF50-460E-B925-54311492FFAF - e4544ab47e6291e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Json.ViewController.fetchCocktail() -&gt; ()"
+                  moduleName = "Json"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/alexsok/Desktop/Lesson%202.01/Json/Json/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "548">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E9261FE5-98BE-4807-8F49-454F77F3653F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Json/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "fetchCocktail()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
