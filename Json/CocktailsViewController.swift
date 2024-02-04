@@ -8,7 +8,7 @@
 import UIKit
 
 
-final class ViewController: UIViewController {
+final class CocktailsViewController: UITableViewController  {
     
     let urlString: String = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita"
     
@@ -24,7 +24,7 @@ final class ViewController: UIViewController {
             return
         }
         URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
-            guard let self else { return }
+            guard self != nil else { return }
             guard let data else {
                 print(error?.localizedDescription ?? "No error description")
                 return
@@ -32,7 +32,7 @@ final class ViewController: UIViewController {
             
             do {
                 let cocktail = try JSONDecoder().decode([Cocktail].self, from: data)
-                print(cocktail.first?.strAlcoholic)
+                print(cocktail)
                 
             } catch {
                 print(error.localizedDescription)
