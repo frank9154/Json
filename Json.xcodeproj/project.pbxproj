@@ -13,6 +13,7 @@
 		451B3A742B69917000A02328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451B3A722B69917000A02328 /* Main.storyboard */; };
 		451B3A762B69917200A02328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451B3A752B69917200A02328 /* Assets.xcassets */; };
 		451B3A792B69917200A02328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451B3A772B69917200A02328 /* LaunchScreen.storyboard */; };
+		454A8DF32B6F966500BD8190 /* CocktailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454A8DF22B6F966500BD8190 /* CocktailCell.swift */; };
 		45DD89302B69B40A0037AD2B /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DD892F2B69B40A0037AD2B /* Cocktail.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		451B3A752B69917200A02328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		451B3A782B69917200A02328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		451B3A7A2B69917200A02328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		454A8DF22B6F966500BD8190 /* CocktailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailCell.swift; sourceTree = "<group>"; };
 		45DD892F2B69B40A0037AD2B /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +62,7 @@
 			children = (
 				451B3A6E2B69917000A02328 /* SceneDelegate.swift */,
 				451B3A702B69917000A02328 /* CocktailsViewController.swift */,
+				454A8DF22B6F966500BD8190 /* CocktailCell.swift */,
 				45DD892F2B69B40A0037AD2B /* Cocktail.swift */,
 				45DD892D2B69A95E0037AD2B /* Storyboards */,
 				454A8DEF2B6F8E6100BD8190 /* Resources */,
@@ -167,6 +170,7 @@
 			files = (
 				451B3A712B69917000A02328 /* CocktailsViewController.swift in Sources */,
 				451B3A6D2B69917000A02328 /* AppDelegate.swift in Sources */,
+				454A8DF32B6F966500BD8190 /* CocktailCell.swift in Sources */,
 				451B3A6F2B69917000A02328 /* SceneDelegate.swift in Sources */,
 				45DD89302B69B40A0037AD2B /* Cocktail.swift in Sources */,
 			);

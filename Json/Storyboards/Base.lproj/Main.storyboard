@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Cocktails-->
         <scene sceneID="CFo-9p-E51">
             <objects>
                 <tableViewController id="gIR-uF-RBJ" customClass="CocktailsViewController" customModule="Json" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="6M6-3b-EAW">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="102" translatesAutoresizingMaskIntoConstraints="NO" id="6M6-3b-EAW" customClass="CocktailCell" customModule="Json" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="102"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6M6-3b-EAW" id="809-kk-krt">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6M6-3b-EAW" id="809-kk-krt" customClass="CocktailCell" customModule="Json" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="102"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -29,7 +29,7 @@
                                                 <constraint firstAttribute="width" constant="140" id="uEF-ib-tf5"/>
                                             </constraints>
                                         </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ySB-ud-lY3">
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ySB-ud-lY3" customClass="Cocktailcell">
                                             <rect key="frame" x="179.33333333333334" y="11" width="108.66666666666666" height="77"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of cocktail" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cby-JG-NfT">
@@ -70,6 +70,12 @@
                                         <constraint firstItem="bFz-Xn-DsE" firstAttribute="top" secondItem="809-kk-krt" secondAttribute="topMargin" constant="-11" id="sxQ-DE-VNo"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="alcoholicOfCocktail" destination="Bs8-xe-srW" id="2cL-6e-gda"/>
+                                    <outlet property="cocktailImage" destination="bFz-Xn-DsE" id="Bx2-nN-RoX"/>
+                                    <outlet property="cocktailName" destination="Cby-JG-NfT" id="rCB-1h-Wru"/>
+                                    <outlet property="recipeOfCocktail" destination="veu-IR-FV3" id="Y9j-gJ-czk"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -77,7 +83,7 @@
                             <outlet property="delegate" destination="gIR-uF-RBJ" id="Nsz-U7-Umf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="3Uq-IV-AvO"/>
+                    <navigationItem key="navigationItem" title="Cocktails" id="3Uq-IV-AvO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d0O-bk-r6V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
