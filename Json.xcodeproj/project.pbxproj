@@ -60,6 +60,7 @@
 		451B3A6B2B69917000A02328 /* Json */ = {
 			isa = PBXGroup;
 			children = (
+				451B3A7A2B69917200A02328 /* Info.plist */,
 				451B3A6E2B69917000A02328 /* SceneDelegate.swift */,
 				451B3A702B69917000A02328 /* CocktailsViewController.swift */,
 				454A8DF22B6F966500BD8190 /* CocktailCell.swift */,
@@ -83,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				451B3A6C2B69917000A02328 /* AppDelegate.swift */,
-				451B3A7A2B69917200A02328 /* Info.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
