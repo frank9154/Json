@@ -10,7 +10,7 @@ import UIKit
 
 final class CocktailsViewController: UITableViewController  {
     
-    let urlString: String = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita"
+    private let urlString: String = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ final class CocktailsViewController: UITableViewController  {
             print("Invalid URL")
             return
         }
-        URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+        URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             guard self != nil else { return }
             guard let data else {
                 print(error?.localizedDescription ?? "No error description")

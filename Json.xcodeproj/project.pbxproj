@@ -58,21 +58,29 @@
 		451B3A6B2B69917000A02328 /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				451B3A7A2B69917200A02328 /* Info.plist */,
 				451B3A6E2B69917000A02328 /* SceneDelegate.swift */,
 				451B3A702B69917000A02328 /* CocktailsViewController.swift */,
 				45DD892F2B69B40A0037AD2B /* Cocktail.swift */,
 				45DD892D2B69A95E0037AD2B /* Storyboards */,
+				454A8DEF2B6F8E6100BD8190 /* Resources */,
 				45DD892C2B69A4610037AD2B /* App */,
 			);
 			path = Json;
 			sourceTree = "<group>";
 		};
-		45DD892C2B69A4610037AD2B /* App */ = {
+		454A8DEF2B6F8E6100BD8190 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				451B3A752B69917200A02328 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		45DD892C2B69A4610037AD2B /* App */ = {
+			isa = PBXGroup;
+			children = (
 				451B3A6C2B69917000A02328 /* AppDelegate.swift */,
+				451B3A7A2B69917200A02328 /* Info.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";
