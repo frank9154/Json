@@ -7,19 +7,34 @@
 
 import UIKit
 
-
 final class CocktailsViewController: UITableViewController  {
     
-    private let urlString: String = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita"
+    private var cocktails: [Cocktail] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchCocktail()
     }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        cocktails.count
+    }
     
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CocktailCell
+        
+        let cocktail = cocktails[indexPath.row]
+        cell.configure(with: cocktail)
+        
+        return cell
+    }
+    
+}
+
+// MARK: - Networking
+extension CocktailsViewController {
     private func fetchCocktail() {
         
-        guard let url = URL(string: urlString) else {
+        guard let url = URL(string: "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita") else {
             print("Invalid URL")
             return
         }
@@ -41,5 +56,4 @@ final class CocktailsViewController: UITableViewController  {
         }.resume()
         
     }
-    
 }
